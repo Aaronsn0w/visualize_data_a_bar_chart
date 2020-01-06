@@ -73,7 +73,7 @@ req.onload = function() {
     .append("text")
     .attr("x", 100)
     .attr("y", 100)
-    .attr("id", "tooltip");
+    .attr("id", "tooltip").attr("class", "lead")
 
   //creando elementos rectangulares por cada dato a mostrar
   svg

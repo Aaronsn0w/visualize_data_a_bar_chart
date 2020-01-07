@@ -73,7 +73,8 @@ req.onload = function() {
     .append("text")
     .attr("x", 100)
     .attr("y", 100)
-    .attr("id", "tooltip").attr("class", "lead")
+    .attr("id", "tooltip")
+    .attr("class", "lead");
 
   //creando elementos rectangulares por cada dato a mostrar
   svg
@@ -125,3 +126,11 @@ req.onload = function() {
      */
   //.attr("transform", (d, i) => {      let translate = [barWidth * i, 0];      return "translate(" + translate + ")";    });
 };
+
+d3.select("body")
+  .append("footer")
+  .append("a")
+  .text("By EmilioRT")
+  .attr("href", "https:emiliort.com")
+  .attr("target", "_blank")
+  .attr("class", "text-decoration-none");

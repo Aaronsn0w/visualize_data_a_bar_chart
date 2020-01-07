@@ -122,15 +122,14 @@ req.onload = function() {
         let Q = date.getMonth()
         return date.getFullYear() + " Q" +Math.ceil(Q/3) + "\nGDP $" + d[1] + " Billion";
     });
-
+    //.attr("transform", (d, i) => {      let translate = [barWidth * i, 0];      return "translate(" + translate + ")";    });
      */
-  //.attr("transform", (d, i) => {      let translate = [barWidth * i, 0];      return "translate(" + translate + ")";    });
-};
 
-d3.select("body")
-  .append("footer")
-  .append("a")
-  .text("By EmilioRT")
-  .attr("href", "https:emiliort.com")
-  .attr("target", "_blank")
-  .attr("class", "text-decoration-none");
+  d3.select("body")
+    .append("footer")
+    .append("a")
+    .text("By EmilioRT")
+    .attr("href", "https:emiliort.com")
+    .attr("target", "_blank")
+    .attr("class", "text-decoration-none");
+};
